@@ -1,0 +1,107 @@
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.02);
+    border-style: double;
+}
+
+.myHeader {
+    font-size: 7rem;
+    color: black;
+    margin: 0 auto;
+    transform: translate(20%, 30%);
+}
+
+.row {
+    height: 100%;
+    width: 100%;
+    margin:0 auto;
+}
+
+.div_trigger {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    position: relative;
+}
+
+.stick{
+    opacity:0.1;
+    transition: opacity 2s;
+}
+
+.zap {
+    opacity: 1;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 99999;
+}
+
+.floating {
+    width: 10%;
+    height: 90px;
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 44;
+    color: white;
+    background: rgb(24, 29, 29);
+    display: inline-block;
+    position: relative;
+    box-shadow: 3px 5px 10px black;
+    opacity: 0;
+    transform: translateY(250px);
+    transition: all 0.5 ease;
+}
+
+#f1 {
+    top: 25px;
+}
+
+#f2 {
+    top: 35px;
+}
+
+#f3 {
+    top: 5px;
+}
+
+#f4 {
+    top: 20px;
+}
+
+#f5 {
+    top: 50px;
+}
+
+
+.clearfix {
+    display: inline-block;
+}
+
+.bgParallax {
+    padding: 150px 0;
+    color: white;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.bg {
+    background-image: url(parallax.png);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 250%;
+    top: 0px;
+    z-index: 1;
+    opacity: 0.4;
+    vertical-align: middle;
+}
